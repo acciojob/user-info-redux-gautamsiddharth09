@@ -16,7 +16,9 @@ const App = () => {
     dispatach(setEmail(e.target.value))
   };
 
-  return <div>
+  return <div className="output">
+    <h1>User Information</h1>
+
     <div>
       <input type="text" value={name} placeholder="Enter Name" onChange={handleChamgeName} />
       <input type="email" value={email} placeholder="Enter Email" onChange={handleChamgeEmail} />
