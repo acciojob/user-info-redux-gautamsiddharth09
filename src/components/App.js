@@ -16,7 +16,7 @@ const App = () => {
     dispatach(setEmail(e.target.value))
   };
 
-  return <div className="output">
+  return <div>
     <h1>User Information</h1>
 
     <div>
@@ -24,11 +24,12 @@ const App = () => {
       <input type="email" value={email} placeholder="Enter Email" onChange={handleChamgeEmail} />
     </div>
 
-    <div>
-      <h3>Current Value in store</h3>
-      <p>Name - {name} </p>
-      <p>email - {email} </p>
-    </div>
+    <div className="output" style={{ marginTop: '30px' }}>
+  <h2>Live Display</h2>
+  <p>Name - {name}</p>
+  <p>Email - {email}</p>
+</div>
+
   </div>;
 };
 
